@@ -1,0 +1,23 @@
+﻿@{
+    Layout = "/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Register";
+}
+
+
+<div class="container">
+
+    <div class="row">
+        <h2>@ViewData["Message"]</h2>
+        <div class="col-xl-4 col-md-8 col-sm-12 flex-column">
+            <form method="post" action="/Auth/Register" class="form-group">
+                <label for="fullname">FullName</label>
+                <input type="text" name="fullname" id="fullname" class="form-control" />
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" class="form-control" />
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" class="form-control" />
+                <button class="btn btn-primary">Register</button>
+            </form>
+        </div>
+    </div>
+</div>
